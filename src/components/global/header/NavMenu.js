@@ -29,7 +29,7 @@ const Navmenu = () => {
         return (
             {
                 subname: itemsMenu.name,
-                sublink: `/${itemsMenu.name.replace(" ", "-").toLowerCase()}`,
+                sublink: `/${itemsMenu.name.replaceAll(/[\^*@!"#$%&/()=?¡!¿'\\ ]/g, "-").toLowerCase()}`,
             }
         )
     })
