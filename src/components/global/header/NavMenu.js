@@ -39,7 +39,7 @@ const Navmenu = () => {
         return (
             {
                 subname: itemsGallery.name,
-                sublink: `/gallery/${itemsGallery.name.replace(" ", "-").toLowerCase()}`,
+                sublink: `/gallery/${itemsGallery.name.replaceAll(/[\^*@!"#$%&/()=?¡!¿'\\ ]/g, "-").toLowerCase()}`,
             }
         )
     })

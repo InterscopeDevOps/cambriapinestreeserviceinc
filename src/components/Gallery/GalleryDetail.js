@@ -16,7 +16,7 @@ function GalleryDetail() {
         <BaseLayout PageName={`${rpdata?.dbPrincipal?.name}`}>
             {
                 rpdata?.landings?.map((item, index) => {
-                    if (item.name.replace(" ", "-").toLowerCase() === id) {
+                    if (item.name.replaceAll(/[\^*@!"#$%&/()=?¡!¿'\\ ]/g, "-").toLowerCase() === id) {
                         return (
                             <div key={index}>
                                 <TransparentHeader
