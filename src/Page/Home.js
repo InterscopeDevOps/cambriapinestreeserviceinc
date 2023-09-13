@@ -58,7 +58,7 @@ function Home() {
               text={rpdata?.dbAbout?.[1]?.text}
               linkVideo={`${rpdata?.videosPromo?.[0].link}`}
               image={`${rpdata?.videosPromo?.[0].img}`}
-              vimeoVideo
+              /* vimeoVideo */
             />
             : null
             
