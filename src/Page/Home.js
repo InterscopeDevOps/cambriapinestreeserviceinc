@@ -18,6 +18,7 @@ import GalleryContent from "../components/Gallery/GalleryContent";
 import Modal from "../components/Home/Modal";
 // import CustomReviews from "../components/reviews/CustomReviews";
 import ValuesOne from "../components/values/Values_4";
+import ModalPost from "../components/global/ModalPost";
 
 // para agregar la frase de los años de experiencia o la licencia agregar sloganPrincipal={true}
 // para agregar la lista de about agregar listsAbout={true}
@@ -28,6 +29,7 @@ function Home() {
   return (
     <BaseLayout PageName="Home">
       <div className="md:max-w-full w-full">
+        <ModalPost />
         <Modal />
         <HeroSection
           title={rpdata?.dbSlogan?.[2]?.slogan}

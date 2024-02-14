@@ -10,7 +10,7 @@ const Modal = () => {
       {showModal ? (
         <>
           <div
-            className="relative z-50"
+            className="relative z-40"
             aria-labelledby="modal-title"
             role="dialog"
             aria-modal="true"
