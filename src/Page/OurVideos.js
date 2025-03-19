@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { GlobalDataContext } from "../context/context";
-import TransparentHeader from "../components/Home/HeroVideoPages";
+import TransparentHeader from "../components/global/TransparentHeader";
 import BaseLayout from "../components/global/BaseLayout";
 
 
@@ -15,12 +15,11 @@ function OurVideos() {
     return (
         <BaseLayout PageName="Our Videos">
             <div className="md:max-w-full w-full">
-                <TransparentHeader
-                    headertitle="Our Videos"
-                    Subheader="Our Videos"
-                    bgimg={`${rpdata?.stock?.[0]}`}
-                    urlVideo={"https://firebasestorage.googleapis.com/v0/b/imagenes-fc412.appspot.com/o/Videos%20Stock%2FSala%20Stock.mp4?alt=media&token=ab421526-2d20-4eed-97de-b516dd45248d"}
-                />
+            <TransparentHeader
+          headertitle="Our Videos"
+          Subheader="Videos"
+          bgimg={`${rpdata?.gallery?.[1]}`}
+        />
             </div>
             <div className="w-4/5 mx-auto py-[100px]">
                 <h1 className="text-center pb-10">Our Videos</h1>

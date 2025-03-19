@@ -666,9 +666,9 @@ nav.side-slide a:hover {
 
 .content_video {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   position: relative;
-  background-color: #000000;
+  background-color: #0001;
 }
 
 .content_video::before {

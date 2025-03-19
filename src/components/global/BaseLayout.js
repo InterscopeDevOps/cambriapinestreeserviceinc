@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
 import React, { useContext, useEffect, useState } from "react";
 import { GlobalDataContext } from "../../context/context";
-import Header from "./header/Header2";
-import Footer from "./footer/Footer_5";
+import Header from "./header/Header_2";
+import Footer from "./footer/Footer_2";
 import ScrollProgressBar from './ScrollProgressBar'
 import ContentWidgetButton from "./botonWidgets/ContentWidgetButton";
 import { FaPalette } from 'react-icons/fa'

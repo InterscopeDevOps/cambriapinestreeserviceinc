@@ -89,7 +89,7 @@ function Footer2() {
                     rpdata?.simpleWidgets?.[3]?.activo ?
                       rpdata?.dbAbout?.[1].text
                       :
-                      rpdata?.dbAbout?.[1].text.substring(0, 181)
+                      rpdata?.dbAbout?.[1].text.substring(0, 264)
                   }
                 </p>
               </div>
