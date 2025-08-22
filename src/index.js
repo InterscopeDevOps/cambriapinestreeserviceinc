@@ -1,13 +1,13 @@
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import { FirebaseAppProvider } from "reactfire";
-import { firebaseConfig } from "../src/utils/firebaseConfig";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';  // Asegúrate de que esté aquí
 
-const container = document.getElementById("root");
-const root = createRoot(container);
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <FirebaseAppProvider firebaseConfig={firebaseConfig} suspence={false}>
-    <App />
-  </FirebaseAppProvider>
+  <React.StrictMode>
+    <BrowserRouter>  {/* Debe envolver toda la app */}
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
 );

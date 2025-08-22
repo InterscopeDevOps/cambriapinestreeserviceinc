@@ -394,3 +394,11 @@ a.active li {
 }
 
 /* fin estilo de los formulario del reviews */
+
+/* fondo color digital card */
+.digitalcard{
+  background-color: var(--bg-footer);
+background-image:
+radial-gradient(at 77% 23%, var(--main-color) 0px, transparent 50%),
+radial-gradient(at 21% 68%, var(--main-color) 0px, transparent 50%);
+}
