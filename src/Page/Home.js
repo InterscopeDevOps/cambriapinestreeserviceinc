@@ -52,6 +52,19 @@ function Home() {
           sloganPrincipal={true}
           listServices={true}
         />
+        {/* <!-- dating space --> */}
+        <div class="justify-center items-center bg1 py-5 my-4">
+          <div class="my-4 justify-center items-center flex flex-wrap gap-5">
+            <h1 class="font-bold text-5xl text-white">Dating Space</h1>
+            <img
+              src={rpdata?.dbPrincipal?.logo}
+              class="bg-white w-[300px] rounded"
+              alt="logo"
+            />
+          </div>
+          <div class="elfsight-app-ec75cd40-25bc-4aab-8393-4bc4a3ee8788" data-elfsight-app-lazy></div>
+        </div>
+
         <Directories />
         {/* video promocional */}
         {rpdata?.videosPromo?.[0]?.activo ? (
@@ -81,12 +94,12 @@ function Home() {
           image3={rpdata?.stock?.[9]}
           listsAbout={true}
         />
-{/*         <ValuesOne
+        {/*         <ValuesOne
           image1={rpdata?.stock?.[4]}
           image2={rpdata?.stock?.[1]}
           image={rpdata?.stock?.[8]}
         /> */}
-{/*         <SlideBlock
+        {/*         <SlideBlock
           title={"a little about us"}
           text={rpdata?.dbValues?.[2].description}
           image={rpdata?.stock?.[2]}
