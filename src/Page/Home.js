@@ -22,7 +22,7 @@ import Modal from "../components/Home/Modal";
 // para agregar la frase de los años de experiencia o la licencia agregar sloganPrincipal={true}
 // para agregar la lista de about agregar listsAbout={true}
 // para agregar la lista de servicios agregar listsServices={true}
-
+import PostComponente "../components/PostComponente"
 function Home() {
   const { rpdata } = useContext(GlobalDataContext);
   return (
@@ -40,6 +40,7 @@ function Home() {
           bgImg2={rpdata?.stock?.[2]}
           bgImg3={rpdata?.stock?.[4]}
         />
+        <PostComponent/>
         <BlockPrincipal
           title={rpdata?.dbSlogan?.[1]?.slogan}
           text={rpdata?.dbHome?.[0].text}
