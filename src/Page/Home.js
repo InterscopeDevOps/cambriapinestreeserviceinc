@@ -16,13 +16,14 @@ import VideoPromocional from "../components/global/VideoPromocional";
 import ContentServices from "../components/Services/ContentServices";
 import GalleryContent from "../components/Gallery/GalleryContent";
 import Modal from "../components/Home/Modal";
+import PostComponent from "../components/PostComponente";
+
 // import CustomReviews from "../components/reviews/CustomReviews";
 /* import ValuesOne from "../components/values/Values_4"; */
 
 // para agregar la frase de los años de experiencia o la licencia agregar sloganPrincipal={true}
 // para agregar la lista de about agregar listsAbout={true}
 // para agregar la lista de servicios agregar listsServices={true}
-import PostComponente "../components/PostComponente"
 function Home() {
   const { rpdata } = useContext(GlobalDataContext);
   return (
