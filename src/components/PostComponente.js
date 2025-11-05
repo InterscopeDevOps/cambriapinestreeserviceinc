@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { GlobalDataContext } from "../context/context";
 
-const WorkGalleryModal = () => {
+const PostComponent = () => {
     const { rpdata } = useContext(GlobalDataContext);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isOpen, setIsOpen] = useState(true); // Abierto por defecto al cargar
@@ -124,4 +124,5 @@ const WorkGalleryModal = () => {
     );
 }
 
-export default WorkGalleryModal;
+
+export default PostComponent;
